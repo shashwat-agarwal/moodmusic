@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mood-music-db",
+  "private_key_id": "d9105ea6e75c1b1dd7ab9c3d9dbb8f8f9e3c4f8f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCxsMWzD8DX7geX\nhZ3FT3exBIid6jA/ckgukBKyYsD/x41Kn8o587AgVsl1jeqFhKfDfgAwGf8aAZNM\nUVw5VQf0V/75EKVgBu0X+txweoZjJ34MgL64RwcpysJUOQ7xG2NRu0FS8+hgozGc\nhJkbsTdCPZf4ncj9sS0K81ucnun96x7l4KJ5PCKibz34mVrxcmpdOgrwgAnzr9Ro\nnRpVGtTHzNa9fNWzXBIDXSQaS5a4zeqLrXusC887IOvxlKiZhveoh8wQfy0inqqF\nKO1GoMSMtH5cqfx++sj0fPg6GDF1il7lwyzQywa7yaN9VN7O0SzC2AXqe3Gj+qlo\nfTk1TfHNAgMBAAECggEACLBBdOa+vq0D+bfKteWGz2ToTqGib9IryOKtfPcBHTcT\nYW3l4pNxmupoQ4NntdUj3eMcNiRQE4qDR3tMxH0adgTUGFCLZ/vJ6pib4E0bCdMN\nYdk588LkJqBxNzleBQVnKk2Uqi5E5qEvZLBpvlxAcAPMGbF5Bm/VwvNEDFwlFwMS\nSjJ8HM6Totjh23l0zxGN8o13ZE+Wr724Jfd7LI2iRzuBpBB0CEHsB+PiiAAxcY/B\nAinUij6AFGMhgksXN0kji7iXUm3x+Ji3jmfh+zMG67J6fBENiZ4Giya3+wqOzci+\nasPQgkXfxBFZ7QFehly2DKPnLEDay2EZ1GYfPw9e2QKBgQDzBJXtBRAbS5icmRcK\n9iB+pXcYDI+Wx4IRAbjmjGQDn2Sgd8LLYdVzZ0aalbjsKrZeLHJWkIUFthdoz+XR\n5noXSHrC2PIq8Sie8HsP1d0xOROf2/3HlnHgKko9lUZlm73OHdIc964KJMysLIaO\ndvWcCTUmi4eKc+XDRqvR2EumKQKBgQC7LsuwSjBEZwityGw6qoF+75jWTQT4C5aw\n4aFrALW6YYPd54RjjPwnRDUuDZWK51deNEn7y9tH+Q4rf4ytshNG32cj9A2sb5DV\nvVBza7DFywCyxvY0guPpPCzUtsZgffhHgCIbNHf8dm7dWRk4jfQxgieon85rqSZd\nitYmPs57BQKBgAjH4aLuy+YwlRMTdQGwYvwwfl0gFxAbpVd3+HZcHEEFQV2K9j7j\nChNhZ+ut/UCLSoucj4URM71BFxdya5tp+H9e3xCrRhTHIfCcP9YSpCtjJJJiIIlV\npkezP3t6KVECj5ki+rSRPnifW8Xc1f/PzJAWxRTfdcZK6cJki1DJv/IBAoGBAKlT\ngrUd1535KtOyK53CYlSGv9aUY7tTGGU4JsJaKQrKbfSOG6fGgM+wlv7rEO1Pqywv\n1wFtfxcTiKr2vjbekSuaqn3Op5PmdLm1gRJ4R7gVlLMk4tHL2gpCAjgGg1wEeFWN\n5sx/YU9Df7TChdswJsemeuPCdIPVxzv1fRWp2TVVAoGBAOBhcib6GBFHCLrak2w7\n5x9fns2Xu9cVb9ReO422HWs0X/cLNnQ8sXPm76aH1ror0mcPJsIIxzb4/4xXsCGM\nDSxRbYL18RcWGNL6JCcl5MqVq3UDCHp+h0TFWXqXppLGfmD+727dDkm+F+ZRcAMJ\nle2w+NkBu2uDOaqtohtm7f3D\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-j725n@mood-music-db.iam.gserviceaccount.com",
+  "client_id": "112077577051990020870",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-j725n%40mood-music-db.iam.gserviceaccount.com"
+}

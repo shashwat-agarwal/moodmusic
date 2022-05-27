@@ -1,0 +1,6 @@
+#Type command to download required dependencies >> python -m pip install -r requirements.txt
+
+opencv-python
+numpy
+tensorflow
+matplotlib

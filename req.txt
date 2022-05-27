@@ -1,0 +1,1 @@
+Get dependencies for emotion_detection.py >> python -m pip install -r requirements.txt
