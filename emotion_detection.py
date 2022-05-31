@@ -14,7 +14,8 @@ from keras.models import load_model
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
-
+import tkinter as tk
+from tkinter import *
 
 #loading pretrained model
 model = load_model('model.h5')
@@ -81,6 +82,10 @@ print(x.shape)
 # Deleting image from system
 os.remove("face.jpg")
 
+top = tk.Tk()
+top.title("Mood based Music Recommendation System")
+
+list_of_songs=tk.Text(top,height=20,width=60)
 
 # Predicting emotion/mood 
 result = model.predict(x)
@@ -95,7 +100,9 @@ emotion_result = label_dict[emotion_index]
 score = round(max(result) * 100, 1)
 
 # Printing detected emotion along with accuracy of detection
-print("\n\nDetected emotion/mood: {} \nAccuracy: {}%".format(emotion_result, score))
+print("Detected emotion/mood: {} \nAccuracy: {}%".format(emotion_result, score))
+detected_mood="Detected emotion/mood: {} \nAccuracy: {}%".format(emotion_result, score)
+list_of_songs.insert(tk.INSERT,detected_mood)
 
 # Plotting graph for accuracy vs emotion label
 fig = plt.figure()
@@ -110,7 +117,9 @@ plt.pause(5)
 plt.close()
 
 
-print("\n\nFetching songs for", emotion_result, "mood.....\n")
+var="\nFetching songs for "+ emotion_result+ " mood.....\n\n";
+list_of_songs.insert(tk.INSERT,var)
+
 
 # Fetching songs corresponding to detected emotion from FireBase Realtime Database
 cred = credentials.Certificate('music.json')
@@ -124,10 +133,13 @@ res = "/" + emotion_result
 ref = db.reference(res)
 snapshot = ref.get()
 
-print("Songs fetched!\n")
+list_of_songs.insert(tk.INSERT,"Songs fetched!\n\n")
+
 for key, val in snapshot.items():
-    print(val)
+    list_of_songs.insert(tk.INSERT,val+"\n")
 
-print("\n\n-------end--------\n")
+list_of_songs.insert(tk.INSERT,"\n\n-------end--------\n")
 
-exit()
+list_of_songs.config(state="disabled")
+list_of_songs.pack()
+top.mainloop()
