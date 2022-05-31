@@ -85,6 +85,7 @@ os.remove("face.jpg")
 top = tk.Tk()
 top.title("Mood based Music Recommendation System")
 
+# UI Screen
 list_of_songs=tk.Text(top,height=20,width=60)
 
 # Predicting emotion/mood 
@@ -140,6 +141,7 @@ for key, val in snapshot.items():
 
 list_of_songs.insert(tk.INSERT,"\n\n-------end--------\n")
 
+#Non editable text 
 list_of_songs.config(state="disabled")
 list_of_songs.pack()
 top.mainloop()
