@@ -86,7 +86,7 @@ top = tk.Tk()
 top.title("Mood based Music Recommendation System")
 
 # UI Screen
-list_of_songs=tk.Text(top,height=20,width=60)
+application_window=tk.Text(top,height=30,width=60)
 
 # Predicting emotion/mood 
 result = model.predict(x)
@@ -103,7 +103,7 @@ score = round(max(result) * 100, 1)
 # Printing detected emotion along with accuracy of detection
 print("Detected emotion/mood: {} \nAccuracy: {}%".format(emotion_result, score))
 detected_mood="Detected emotion/mood: {} \nAccuracy: {}%".format(emotion_result, score)
-list_of_songs.insert(tk.INSERT,detected_mood)
+application_window.insert(tk.INSERT,detected_mood)
 
 # Plotting graph for accuracy vs emotion label
 fig = plt.figure()
@@ -119,7 +119,7 @@ plt.close()
 
 
 var="\nFetching songs for "+ emotion_result+ " mood.....\n\n";
-list_of_songs.insert(tk.INSERT,var)
+application_window.insert(tk.INSERT,var)
 
 
 # Fetching songs corresponding to detected emotion from FireBase Realtime Database
@@ -134,14 +134,14 @@ res = "/" + emotion_result
 ref = db.reference(res)
 snapshot = ref.get()
 
-list_of_songs.insert(tk.INSERT,"Songs fetched!\n\n")
+application_window.insert(tk.INSERT,"Songs fetched!\n\n")
 
 for key, val in snapshot.items():
-    list_of_songs.insert(tk.INSERT,val+"\n")
+    application_window.insert(tk.INSERT,val+"\n")
 
-list_of_songs.insert(tk.INSERT,"\n\n-------end--------\n")
+application_window.insert(tk.INSERT,"\n\n-------end--------\n")
 
-#Non editable text 
-list_of_songs.config(state="disabled")
-list_of_songs.pack()
+#Non editable application window screen 
+application_window.config(state="disabled")
+application_window.pack()
 top.mainloop()
